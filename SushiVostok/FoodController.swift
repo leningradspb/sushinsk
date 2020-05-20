@@ -29,7 +29,6 @@ class FoodController: UIViewController {
 		tableView.dataSource = self
 	}
 
-
 }
 
 extension FoodController: UITableViewDataSource, UITableViewDelegate {
@@ -51,6 +50,21 @@ extension FoodController: UITableViewDataSource, UITableViewDelegate {
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		357
+	}
+
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if let cell = tableView.cellForRow(at: indexPath) as? FoodCell {
+
+			if BasketSumm.shared.basket[cell.name] == nil {
+				BasketSumm.shared.basket[cell.name] = cell.price
+				view.showMessage(text: "\(cell.name) добавлено в корзину")
+			} else {
+				BasketSumm.shared.basket[cell.name] = nil
+				view.showMessage(text: "\(cell.name) удалено из корзины")
+			}
+
+			print(BasketSumm.shared.basket)
+		}
 	}
 
 

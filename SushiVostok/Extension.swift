@@ -47,6 +47,13 @@ extension UIView {
 				messageView.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -8).isActive = true
 			}
 
+			UIView.animate(withDuration: 0.5) {
+				messageView.alpha = 1
+			}
+
+			DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+				messageView.removeFromSuperview()
+			}
 
 		}
 	}
@@ -94,7 +101,7 @@ final class MessageView: UITextView {
 
      func setupTheme() {
 
-		backgroundColor = Colors.shared.red
+		backgroundColor = #colorLiteral(red: 0, green: 0.5690457821, blue: 0.5746168494, alpha: 1)
         textColor = Colors.shared.white
     }
 }

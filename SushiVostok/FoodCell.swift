@@ -9,10 +9,13 @@
 import UIKit
 
 class FoodCell: UITableViewCell {
-	@IBOutlet weak var itemImage: UIImageView!
-	@IBOutlet weak var nameLabel: UILabel!
-	@IBOutlet weak var descriptionLabel: UILabel!
-	@IBOutlet weak var priceLabel: UILabel!
+	@IBOutlet private weak var itemImage: UIImageView!
+	@IBOutlet private weak var nameLabel: UILabel!
+	@IBOutlet private weak var descriptionLabel: UILabel!
+	@IBOutlet private weak var priceLabel: UILabel!
+
+	var price = Int()
+	var name = String()
 	
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +27,8 @@ class FoodCell: UITableViewCell {
 		nameLabel.text = food.name
 		descriptionLabel.text = food.description
 		priceLabel.text = String(food.price)
+		price = food.price
+		name = food.name
 	}
 
 }

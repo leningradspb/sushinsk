@@ -9,6 +9,7 @@
 import Foundation
 
 class BasketSumm {
-	let shared = BasketSumm()
+	static let shared = BasketSumm()
 	var summ = Int()
+	var basket: [String: Int] = [:]
 }
