@@ -147,6 +147,12 @@
                                                 <constraint firstItem="TIr-fB-s6w" firstAttribute="trailing" secondItem="WSr-DB-VFT" secondAttribute="trailingMargin" id="zbi-hZ-2kT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="uLf-fg-ape" id="ODK-ff-vJG"/>
+                                            <outlet property="itemImage" destination="TIr-fB-s6w" id="nOy-yo-5Nc"/>
+                                            <outlet property="nameLabel" destination="Wqx-hc-zsY" id="fuB-rQ-A5k"/>
+                                            <outlet property="priceLabel" destination="1V1-1J-0HB" id="Vag-qg-pQp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
