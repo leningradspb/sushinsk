@@ -8,16 +8,9 @@
 
 import UIKit
 
-var names = [String]()
-var price = [Int]()
-
 class BasketController: UIViewController {
 	private let BasketCell = "BasketCell"
 
-	//var values = [Int]()
-	//var keys = [String]()
-
-	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var order: UILabel!
 
 	override func viewDidLoad() {
