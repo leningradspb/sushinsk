@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uzf-Q1-2gv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Акции-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SushiVostok" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lC7-Zl-SNe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SaleCell" rowHeight="245" id="YCq-Cq-2QQ" customClass="SaleCell" customModule="SushiVostok" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="245"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YCq-Cq-2QQ" id="Pei-Zf-AyA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="245"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SmS-nL-kb8">
+                                                    <rect key="frame" x="20" y="11" width="374" height="187.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="mRF-R2-Mj7">
+                                                    <rect key="frame" x="20" y="208.5" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mRF-R2-Mj7" secondAttribute="trailing" id="Aue-tD-vgp"/>
+                                                <constraint firstItem="SmS-nL-kb8" firstAttribute="top" secondItem="Pei-Zf-AyA" secondAttribute="topMargin" id="NNa-Ff-o43"/>
+                                                <constraint firstItem="SmS-nL-kb8" firstAttribute="leading" secondItem="Pei-Zf-AyA" secondAttribute="leadingMargin" id="Tpp-mt-pFe"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mRF-R2-Mj7" secondAttribute="bottom" constant="5" id="WDL-kn-u8a"/>
+                                                <constraint firstItem="mRF-R2-Mj7" firstAttribute="top" secondItem="SmS-nL-kb8" secondAttribute="bottom" constant="10" id="cVK-Gc-UsR"/>
+                                                <constraint firstItem="SmS-nL-kb8" firstAttribute="trailing" secondItem="Pei-Zf-AyA" secondAttribute="trailingMargin" id="vR4-Cf-gmS"/>
+                                                <constraint firstItem="mRF-R2-Mj7" firstAttribute="leading" secondItem="Pei-Zf-AyA" secondAttribute="leadingMargin" id="vlQ-Ow-Nbc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageItem" destination="SmS-nL-kb8" id="PpO-EW-xqG"/>
+                                            <outlet property="itemLabel" destination="mRF-R2-Mj7" id="rYF-gi-M1a"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lC7-Zl-SNe" secondAttribute="trailing" id="93i-7f-Iff"/>
+                            <constraint firstItem="lC7-Zl-SNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Oja-jR-sDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lC7-Zl-SNe" secondAttribute="bottom" id="ZNa-pz-8nH"/>
+                            <constraint firstItem="lC7-Zl-SNe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="c06-jV-eMG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Акции" image="sale" id="goy-4k-3XP"/>
+                    <connections>
+                        <outlet property="tableView" destination="lC7-Zl-SNe" id="YOZ-AS-Ppd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Доставка-->
+        <scene sceneID="kEA-As-vUk">
+            <objects>
+                <viewController id="6sM-xl-qjy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lnm-Y6-uKH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nmG-XF-iqy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Доставка" image="food" id="KZp-uS-jCb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pav-zZ-rMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="117"/>
+        </scene>
+        <!--Корзина-->
+        <scene sceneID="ydz-Sm-ICG">
+            <objects>
+                <viewController id="MTn-Zg-TJr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N3N-ef-Kcd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="foX-3p-r2t"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Корзина" image="basket" id="F8r-ef-Jga"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCs-t1-4oc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2483" y="118"/>
+        </scene>
+        <!--О нас-->
+        <scene sceneID="oef-Ui-N6I">
+            <objects>
+                <viewController id="de4-Uk-ofJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zib-Sg-Dtx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Meh-CL-mev"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="О нас" image="info" id="Jfi-4k-y57"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rix-ob-Gx6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3175" y="125"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hdS-3m-ylS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Uzf-Q1-2gv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4yT-tn-ejj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="S3m-ql-3xE"/>
+                        <segue destination="6sM-xl-qjy" kind="relationship" relationship="viewControllers" id="iLp-EJ-IHC"/>
+                        <segue destination="MTn-Zg-TJr" kind="relationship" relationship="viewControllers" id="swm-ny-bx4"/>
+                        <segue destination="de4-Uk-ofJ" kind="relationship" relationship="viewControllers" id="x4m-Fg-eb9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ind-Tt-u08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="basket" width="30" height="30"/>
+        <image name="food" width="30" height="30"/>
+        <image name="info" width="30" height="30"/>
+        <image name="sale" width="30" height="30"/>
+    </resources>
+</document>
