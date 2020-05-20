@@ -178,7 +178,7 @@
         <!--Корзина-->
         <scene sceneID="ydz-Sm-ICG">
             <objects>
-                <viewController id="MTn-Zg-TJr" sceneMemberID="viewController">
+                <viewController id="MTn-Zg-TJr" customClass="BasketController" customModule="SushiVostok" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N3N-ef-Kcd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,14 +189,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8ck-Qw-Jdg">
-                                <rect key="frame" x="20" y="98" width="374" height="300"/>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8ck-Qw-Jdg">
+                                <rect key="frame" x="20" y="188" width="374" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="kt7-qa-BN4"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="BKU-Dh-Feq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BasketCell" rowHeight="72" id="BKU-Dh-Feq" customClass="BasketCell" customModule="SushiVostok" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BKU-Dh-Feq" id="pJf-zT-cMU">
@@ -227,11 +227,15 @@
                                                 <constraint firstItem="97j-k0-vfe" firstAttribute="leading" secondItem="pJf-zT-cMU" secondAttribute="leadingMargin" constant="5" id="vV8-gp-At5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="name" destination="97j-k0-vfe" id="Fd5-5T-OgR"/>
+                                            <outlet property="price" destination="YAk-Ka-gtw" id="LTS-Gk-kvW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxF-gK-UuH">
-                                <rect key="frame" x="154" y="418" width="106" height="36"/>
+                                <rect key="frame" x="154" y="430" width="106" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="ЗАКАЗАТЬ">
                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -240,17 +244,22 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="jxF-gK-UuH" firstAttribute="top" secondItem="8ck-Qw-Jdg" secondAttribute="bottom" constant="20" id="22Q-ud-ShU"/>
                             <constraint firstItem="foX-3p-r2t" firstAttribute="trailing" secondItem="8ck-Qw-Jdg" secondAttribute="trailing" constant="20" id="Er7-cm-Aio"/>
-                            <constraint firstItem="8ck-Qw-Jdg" firstAttribute="top" secondItem="xOf-4g-4db" secondAttribute="bottom" constant="10" id="Vtb-g1-WuS"/>
+                            <constraint firstItem="8ck-Qw-Jdg" firstAttribute="top" secondItem="xOf-4g-4db" secondAttribute="bottom" constant="100" id="Vtb-g1-WuS"/>
                             <constraint firstItem="xOf-4g-4db" firstAttribute="centerX" secondItem="N3N-ef-Kcd" secondAttribute="centerX" id="WwU-Ax-JRw"/>
                             <constraint firstItem="jxF-gK-UuH" firstAttribute="centerX" secondItem="N3N-ef-Kcd" secondAttribute="centerX" id="Zkb-JL-yQ6"/>
+                            <constraint firstItem="jxF-gK-UuH" firstAttribute="centerX" secondItem="N3N-ef-Kcd" secondAttribute="centerX" id="byT-uA-X7d"/>
                             <constraint firstItem="8ck-Qw-Jdg" firstAttribute="leading" secondItem="foX-3p-r2t" secondAttribute="leading" constant="20" id="kPx-Sw-NdH"/>
                             <constraint firstItem="xOf-4g-4db" firstAttribute="top" secondItem="foX-3p-r2t" secondAttribute="top" constant="20" id="mDE-RK-w0S"/>
+                            <constraint firstItem="jxF-gK-UuH" firstAttribute="centerY" secondItem="N3N-ef-Kcd" secondAttribute="centerY" id="pof-fN-Jsl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="foX-3p-r2t"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Корзина" image="basket" id="F8r-ef-Jga"/>
+                    <connections>
+                        <outlet property="order" destination="xOf-4g-4db" id="I2F-gw-0OE"/>
+                        <outlet property="tableView" destination="8ck-Qw-Jdg" id="ONX-A0-22b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCs-t1-4oc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

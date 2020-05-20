@@ -13,6 +13,8 @@
 		2604C68B24758ACD000EB92F /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C68A24758ACD000EB92F /* FoodController.swift */; };
 		2604C68D24758C8C000EB92F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C68C24758C8C000EB92F /* Extension.swift */; };
 		2604C68F24758DC2000EB92F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C68E24758DC2000EB92F /* Food.swift */; };
+		2604C6912475B402000EB92F /* BasketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C6902475B402000EB92F /* BasketController.swift */; };
+		2604C6932475B453000EB92F /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C6922475B453000EB92F /* BasketCell.swift */; };
 		26EA0D8F24753F2000D53BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA0D8E24753F2000D53BCF /* AppDelegate.swift */; };
 		26EA0D9124753F2000D53BCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA0D9024753F2000D53BCF /* SceneDelegate.swift */; };
 		26EA0D9324753F2000D53BCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA0D9224753F2000D53BCF /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		2604C68A24758ACD000EB92F /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
 		2604C68C24758C8C000EB92F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		2604C68E24758DC2000EB92F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		2604C6902475B402000EB92F /* BasketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketController.swift; sourceTree = "<group>"; };
+		2604C6922475B453000EB92F /* BasketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
 		26EA0D8B24753F2000D53BCF /* SushiVostok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiVostok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EA0D8E24753F2000D53BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26EA0D9024753F2000D53BCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +76,11 @@
 				26EA0D9024753F2000D53BCF /* SceneDelegate.swift */,
 				26EA0D9224753F2000D53BCF /* ViewController.swift */,
 				2604C68A24758ACD000EB92F /* FoodController.swift */,
+				2604C6902475B402000EB92F /* BasketController.swift */,
 				26EA0D9424753F2000D53BCF /* Main.storyboard */,
 				2604C6842475815F000EB92F /* SaleCell.swift */,
 				2604C68824758ABA000EB92F /* FoodCell.swift */,
+				2604C6922475B453000EB92F /* BasketCell.swift */,
 				26EA0D9724753F2600D53BCF /* Assets.xcassets */,
 				26EA0D9924753F2600D53BCF /* LaunchScreen.storyboard */,
 				26EA0D9C24753F2600D53BCF /* Info.plist */,
@@ -163,8 +169,10 @@
 				26EA0D8F24753F2000D53BCF /* AppDelegate.swift in Sources */,
 				2604C68F24758DC2000EB92F /* Food.swift in Sources */,
 				2604C6852475815F000EB92F /* SaleCell.swift in Sources */,
+				2604C6932475B453000EB92F /* BasketCell.swift in Sources */,
 				26EA0D9124753F2000D53BCF /* SceneDelegate.swift in Sources */,
 				2604C68D24758C8C000EB92F /* Extension.swift in Sources */,
+				2604C6912475B402000EB92F /* BasketController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
