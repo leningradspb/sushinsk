@@ -12,4 +12,11 @@ class BasketSumm {
 	static let shared = BasketSumm()
 	var summ = Int()
 	var basket: [String: Int] = [:]
+	
+	var names: [String] {
+		Array(basket.keys)
+	}
+	var price: [Int] {
+		Array(basket.values)
+	}
 }
