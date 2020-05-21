@@ -299,6 +299,7 @@
                     <tabBarItem key="tabBarItem" title="Корзина" image="basket" id="F8r-ef-Jga"/>
                     <connections>
                         <outlet property="order" destination="xOf-4g-4db" id="I2F-gw-0OE"/>
+                        <outlet property="scrollOutlet" destination="yky-Sf-2sK" id="a39-xU-V16"/>
                         <outlet property="tableView" destination="ixU-5b-LA2" id="Cze-39-y2f"/>
                     </connections>
                 </viewController>

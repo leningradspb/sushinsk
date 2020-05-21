@@ -13,11 +13,14 @@ class BasketController: UIViewController {
 
 	@IBOutlet weak var order: UILabel!
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var scrollOutlet: UIScrollView!
 
 	override func viewDidLoad() {
         super.viewDidLoad()
 
 		setupTableView()
+		registerForKeyboardNotification()
+		recognizer(for: scrollOutlet, action: #selector(onTap))
 
 //		//values = BasketSumm.shared.basket.map { $0.value }
 //
@@ -35,7 +38,60 @@ class BasketController: UIViewController {
 		super.viewWillAppear(true)
 		order.text = "Сумма: \(BasketSumm.shared.summ)"
 		tableView.reloadData()
-		//setupTableView()
+	}
+
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		view.endEditing(true)
+	}
+
+	private func recognizer(for view: UIView, action: Selector?) {
+		let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: action)
+
+		singleTapGestureRecognizer.numberOfTapsRequired = 1
+		singleTapGestureRecognizer.isEnabled = true
+		singleTapGestureRecognizer.cancelsTouchesInView = false
+
+		view.isUserInteractionEnabled = true
+		view.addGestureRecognizer(singleTapGestureRecognizer)
+	}
+
+	@objc private func onTap() {
+		self.view.endEditing(true)
+	}
+
+	// MARK: - Keyboard apper block
+
+	private func registerForKeyboardNotification() {
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+
+	}
+
+	@objc private func keyboardWillShow(_ notification: Notification) {
+
+		if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+			let keyboardRectangle = keyboardFrame.cgRectValue
+			let _ = keyboardRectangle.height
+
+			self.view.transform = CGAffineTransform(translationX: 0, y: -130)
+		}
+
+	}
+
+	@objc private func keyboardWillHide() {
+		self.view.transform = CGAffineTransform(translationX: 0, y: 0)
+	}
+
+	private func removeKeyboardObservers() {
+
+		NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+
+		NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+	}
+
+	deinit {
+		removeKeyboardObservers()
 	}
     
 
