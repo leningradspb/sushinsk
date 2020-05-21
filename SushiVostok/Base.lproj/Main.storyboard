@@ -187,10 +187,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhp-DZ-32y">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="442"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="435"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxF-gK-UuH">
-                                                <rect key="frame" x="154" y="366" width="106" height="36"/>
+                                                <rect key="frame" x="154" y="359" width="106" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="ЗАКАЗАТЬ">
                                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -200,12 +200,12 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7I2-hZ-VZU">
-                                                <rect key="frame" x="20" y="306" width="374" height="34"/>
+                                                <rect key="frame" x="20" y="299" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="174" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ixU-5b-LA2" customClass="ContentSizedTableView" customModule="SushiVostok" customModuleProvider="target">
-                                                <rect key="frame" x="12" y="61" width="394" height="174"/>
+                                                <rect key="frame" x="12" y="54" width="394" height="174"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FinalBasketCell" rowHeight="55" id="QD8-Rc-So4" customClass="FinalBasketCell" customModule="SushiVostok" customModuleProvider="target">
@@ -246,8 +246,14 @@
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЗАКАЗ НА СУММУ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOf-4g-4db">
+                                                <rect key="frame" x="112.5" y="10" width="189" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ввведите адрес" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-FJ-Ik8">
-                                                <rect key="frame" x="20" y="253" width="374" height="34"/>
+                                                <rect key="frame" x="20" y="246" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -262,10 +268,12 @@
                                             <constraint firstAttribute="trailing" secondItem="ixU-5b-LA2" secondAttribute="trailing" constant="8" id="RRb-cZ-kpf"/>
                                             <constraint firstItem="c7g-FJ-Ik8" firstAttribute="top" secondItem="ixU-5b-LA2" secondAttribute="bottom" constant="18" id="USU-im-MmX"/>
                                             <constraint firstAttribute="bottom" secondItem="jxF-gK-UuH" secondAttribute="bottom" constant="40" id="Ujq-Tk-ryW"/>
+                                            <constraint firstItem="xOf-4g-4db" firstAttribute="centerX" secondItem="rhp-DZ-32y" secondAttribute="centerX" id="ZPD-MF-eiq"/>
+                                            <constraint firstItem="xOf-4g-4db" firstAttribute="top" secondItem="rhp-DZ-32y" secondAttribute="top" constant="10" id="bod-DI-bP5"/>
                                             <constraint firstItem="7I2-hZ-VZU" firstAttribute="top" secondItem="c7g-FJ-Ik8" secondAttribute="bottom" constant="19" id="cKc-7i-VgT"/>
-                                            <constraint firstItem="ixU-5b-LA2" firstAttribute="top" secondItem="rhp-DZ-32y" secondAttribute="top" constant="61" id="cft-GN-Xlk"/>
                                             <constraint firstItem="7I2-hZ-VZU" firstAttribute="leading" secondItem="rhp-DZ-32y" secondAttribute="leading" constant="20" id="clh-8R-F7Z"/>
                                             <constraint firstAttribute="trailing" secondItem="7I2-hZ-VZU" secondAttribute="trailing" constant="20" id="l73-OV-NYR"/>
+                                            <constraint firstItem="ixU-5b-LA2" firstAttribute="top" secondItem="xOf-4g-4db" secondAttribute="bottom" constant="20" id="mzR-nF-K76"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -278,12 +286,6 @@
                                     <constraint firstItem="rhp-DZ-32y" firstAttribute="top" secondItem="yky-Sf-2sK" secondAttribute="top" id="ur7-ab-Cqn"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЗАКАЗ НА СУММУ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOf-4g-4db">
-                                <rect key="frame" x="112.5" y="64" width="189" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -291,8 +293,6 @@
                             <constraint firstItem="yky-Sf-2sK" firstAttribute="leading" secondItem="foX-3p-r2t" secondAttribute="leading" id="JHN-IO-mDb"/>
                             <constraint firstItem="foX-3p-r2t" firstAttribute="trailing" secondItem="yky-Sf-2sK" secondAttribute="trailing" id="MpX-B3-MDT"/>
                             <constraint firstItem="yky-Sf-2sK" firstAttribute="top" secondItem="foX-3p-r2t" secondAttribute="top" id="Rfw-91-VWG"/>
-                            <constraint firstItem="xOf-4g-4db" firstAttribute="centerX" secondItem="N3N-ef-Kcd" secondAttribute="centerX" id="WwU-Ax-JRw"/>
-                            <constraint firstItem="xOf-4g-4db" firstAttribute="top" secondItem="foX-3p-r2t" secondAttribute="top" constant="20" id="mDE-RK-w0S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="foX-3p-r2t"/>
                     </view>
