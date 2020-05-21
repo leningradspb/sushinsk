@@ -322,7 +322,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVf-Jf-pv6">
-                                <rect key="frame" x="174.5" y="428" width="65" height="40"/>
+                                <rect key="frame" x="174.5" y="329" width="65" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="ЖДУ!">
                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -331,14 +331,23 @@
                                     <action selector="waitTapped:" destination="ZCc-KJ-GUm" eventType="touchUpInside" id="e0F-Nh-sIq"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delivery2" translatesAutoresizingMaskIntoConstraints="NO" id="ihD-1e-uQO">
+                                <rect key="frame" x="20" y="108" width="374" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="Moe-0h-3kO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ihD-1e-uQO" firstAttribute="top" secondItem="DN5-Lb-lNF" secondAttribute="bottom" constant="10" id="5ND-mQ-gKs"/>
+                            <constraint firstItem="nVf-Jf-pv6" firstAttribute="top" secondItem="ihD-1e-uQO" secondAttribute="bottom" constant="40" id="K8W-UP-4iv"/>
                             <constraint firstItem="Q0M-Br-3EB" firstAttribute="trailing" secondItem="DN5-Lb-lNF" secondAttribute="trailing" constant="5" id="Ne3-Fo-oHr"/>
                             <constraint firstItem="DN5-Lb-lNF" firstAttribute="leading" secondItem="Q0M-Br-3EB" secondAttribute="leading" constant="5" id="X6M-np-YxM"/>
                             <constraint firstItem="nVf-Jf-pv6" firstAttribute="centerX" secondItem="d07-eT-rQs" secondAttribute="centerX" id="cVX-7S-Jal"/>
                             <constraint firstItem="DN5-Lb-lNF" firstAttribute="top" secondItem="Q0M-Br-3EB" secondAttribute="top" constant="30" id="dhV-VM-ZWs"/>
-                            <constraint firstItem="nVf-Jf-pv6" firstAttribute="centerY" secondItem="d07-eT-rQs" secondAttribute="centerY" id="qRD-9P-o3f"/>
+                            <constraint firstItem="ihD-1e-uQO" firstAttribute="leading" secondItem="Q0M-Br-3EB" secondAttribute="leading" constant="20" id="gI2-M4-hsR"/>
+                            <constraint firstItem="Q0M-Br-3EB" firstAttribute="trailing" secondItem="ihD-1e-uQO" secondAttribute="trailing" constant="20" id="iFA-xD-oN3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q0M-Br-3EB"/>
                     </view>
@@ -348,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgP-ol-y5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2483" y="864"/>
+            <point key="canvasLocation" x="2482.608695652174" y="863.83928571428567"/>
         </scene>
         <!--О нас-->
         <scene sceneID="oef-Ui-N6I">
@@ -423,6 +432,7 @@
     <resources>
         <image name="basket" width="30" height="30"/>
         <image name="contacts" width="544" height="364"/>
+        <image name="delivery2" width="500" height="457"/>
         <image name="food" width="30" height="30"/>
         <image name="info" width="30" height="30"/>
         <image name="rub" width="30" height="30"/>
