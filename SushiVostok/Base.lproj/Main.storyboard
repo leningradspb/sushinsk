@@ -11,7 +11,7 @@
         <!--Акции-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SushiVostok" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Суши_НСК" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SaleCell" rowHeight="245" id="YCq-Cq-2QQ" customClass="SaleCell" customModule="SushiVostok" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SaleCell" rowHeight="245" id="YCq-Cq-2QQ" customClass="SaleCell" customModule="Суши_НСК" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="245"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YCq-Cq-2QQ" id="Pei-Zf-AyA">
@@ -30,8 +30,8 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SmS-nL-kb8">
                                                     <rect key="frame" x="20" y="11" width="374" height="187.5"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="mRF-R2-Mj7">
-                                                    <rect key="frame" x="20" y="208.5" width="374" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRF-R2-Mj7">
+                                                    <rect key="frame" x="25" y="208.5" width="369" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="mRF-R2-Mj7" secondAttribute="bottom" constant="5" id="WDL-kn-u8a"/>
                                                 <constraint firstItem="mRF-R2-Mj7" firstAttribute="top" secondItem="SmS-nL-kb8" secondAttribute="bottom" constant="10" id="cVK-Gc-UsR"/>
                                                 <constraint firstItem="SmS-nL-kb8" firstAttribute="trailing" secondItem="Pei-Zf-AyA" secondAttribute="trailingMargin" id="vR4-Cf-gmS"/>
-                                                <constraint firstItem="mRF-R2-Mj7" firstAttribute="leading" secondItem="Pei-Zf-AyA" secondAttribute="leadingMargin" id="vlQ-Ow-Nbc"/>
+                                                <constraint firstItem="mRF-R2-Mj7" firstAttribute="leading" secondItem="Pei-Zf-AyA" secondAttribute="leadingMargin" constant="5" id="vlQ-Ow-Nbc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -76,7 +76,7 @@
         <!--Доставка-->
         <scene sceneID="kEA-As-vUk">
             <objects>
-                <viewController id="6sM-xl-qjy" customClass="FoodController" customModule="SushiVostok" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6sM-xl-qjy" customClass="FoodController" customModule="Суши_НСК" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lnm-Y6-uKH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FoodCell" rowHeight="357" id="vfB-rp-BOO" customClass="FoodCell" customModule="SushiVostok" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FoodCell" rowHeight="357" id="vfB-rp-BOO" customClass="FoodCell" customModule="Суши_НСК" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="357"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vfB-rp-BOO" id="WSr-DB-VFT">
@@ -178,7 +178,7 @@
         <!--Корзина-->
         <scene sceneID="ydz-Sm-ICG">
             <objects>
-                <viewController id="MTn-Zg-TJr" customClass="BasketController" customModule="SushiVostok" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MTn-Zg-TJr" customClass="BasketController" customModule="Суши_НСК" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N3N-ef-Kcd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,11 +204,11 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="174" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ixU-5b-LA2" customClass="ContentSizedTableView" customModule="SushiVostok" customModuleProvider="target">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="174" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ixU-5b-LA2" customClass="ContentSizedTableView" customModule="Суши_НСК" customModuleProvider="target">
                                                 <rect key="frame" x="12" y="54" width="394" height="174"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FinalBasketCell" rowHeight="55" id="QD8-Rc-So4" customClass="FinalBasketCell" customModule="SushiVostok" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FinalBasketCell" rowHeight="55" id="QD8-Rc-So4" customClass="FinalBasketCell" customModule="Суши_НСК" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="394" height="55"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QD8-Rc-So4" id="POp-fb-QHT">
@@ -310,7 +310,7 @@
         <!--Success Controller-->
         <scene sceneID="5vN-Ua-Du9">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ZCc-KJ-GUm" customClass="SuccessController" customModule="SushiVostok" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ZCc-KJ-GUm" customClass="SuccessController" customModule="Суши_НСК" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d07-eT-rQs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

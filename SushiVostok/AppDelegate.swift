@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		UITabBar.appearance().barTintColor = #colorLiteral(red: 0.8659847975, green: 0.456500113, blue: 0.01616030931, alpha: 1)
-		UITabBar.appearance().tintColor = #colorLiteral(red: 0.7365081906, green: 0.07953534275, blue: 0.03568249196, alpha: 1)
+		UITabBar.appearance().barTintColor = #colorLiteral(red: 0.1316639185, green: 0.05112185329, blue: 0.03080516309, alpha: 1)
+		UITabBar.appearance().tintColor = #colorLiteral(red: 0.5769248009, green: 0.2303159535, blue: 0.1950047612, alpha: 1)
 		UITabBar.appearance().unselectedItemTintColor = .white
 		return true
 	}
