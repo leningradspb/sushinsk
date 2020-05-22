@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 	
 	private let SaleCell = "SaleCell"
-	private let saleTitles = ["СКИДКА 25% НА ВСЕ РОЛЛЫ – КРОМЕ ФИЛАДЕЛЬФИЙ" , "ПОДАРКИ НА ДЕНЬ РОЖДЕНИЯ", "1,5 КГ. ФИЛАДЕЛЬФИИ – 900 РУБ", "СЕТ КОМПЛИМЕНТ", "КРЕВЕТКА В КЛЯРЕ 266 РУБЛЕЙ!"]
+	private let saleTitles = ["СУШИ СЕТ РЕЛАКС - 1050гр за 499 рублей" , "СУШИ СЕТ МУЖСКОЙ ЗАКУСОН - 930гр за 599 рублей", "СУШИ СЕТ НСK 2 КГ за 1399 рублей", "СУШИ СЕТ СТУДЕНЧЕСКИЙ 2 КГ за 888 РУБЛЕЙ!", "СУШИ СЕТ БОЛЬШОЙ КУШ 4 кг за 2499 рублей!"]
 	private let images = ["1" , "2", "3", "4", "5"]
 
 	override func viewDidLoad() {

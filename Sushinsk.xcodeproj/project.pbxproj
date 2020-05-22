@@ -34,7 +34,7 @@
 		2604C6902475B402000EB92F /* BasketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketController.swift; sourceTree = "<group>"; };
 		2604C6942475C167000EB92F /* SuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
 		2604C69624768E3F000EB92F /* FinalBasketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalBasketCell.swift; sourceTree = "<group>"; };
-		26EA0D8B24753F2000D53BCF /* SushiVostok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiVostok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EA0D8B24753F2000D53BCF /* Суши НСК.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Суши НСК.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EA0D8E24753F2000D53BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26EA0D9024753F2000D53BCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26EA0D9224753F2000D53BCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +55,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2604C698247810B1000EB92F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26EA0D9224753F2000D53BCF /* ViewController.swift */,
+				2604C68A24758ACD000EB92F /* FoodController.swift */,
+				2604C6902475B402000EB92F /* BasketController.swift */,
+				2604C6942475C167000EB92F /* SuccessController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2604C699247810BD000EB92F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2604C6842475815F000EB92F /* SaleCell.swift */,
+				2604C68824758ABA000EB92F /* FoodCell.swift */,
+				2604C69624768E3F000EB92F /* FinalBasketCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		26EA0D8224753F2000D53BCF = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +87,7 @@
 		26EA0D8C24753F2000D53BCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26EA0D8B24753F2000D53BCF /* SushiVostok.app */,
+				26EA0D8B24753F2000D53BCF /* Суши НСК.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,14 +97,9 @@
 			children = (
 				26EA0D8E24753F2000D53BCF /* AppDelegate.swift */,
 				26EA0D9024753F2000D53BCF /* SceneDelegate.swift */,
-				26EA0D9224753F2000D53BCF /* ViewController.swift */,
-				2604C68A24758ACD000EB92F /* FoodController.swift */,
-				2604C6902475B402000EB92F /* BasketController.swift */,
-				2604C6942475C167000EB92F /* SuccessController.swift */,
+				2604C698247810B1000EB92F /* Controllers */,
 				26EA0D9424753F2000D53BCF /* Main.storyboard */,
-				2604C6842475815F000EB92F /* SaleCell.swift */,
-				2604C68824758ABA000EB92F /* FoodCell.swift */,
-				2604C69624768E3F000EB92F /* FinalBasketCell.swift */,
+				2604C699247810BD000EB92F /* Views */,
 				26EA0D9724753F2600D53BCF /* Assets.xcassets */,
 				26EA0D9924753F2600D53BCF /* LaunchScreen.storyboard */,
 				26EA0D9C24753F2600D53BCF /* Info.plist */,
@@ -97,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		26EA0D8A24753F2000D53BCF /* SushiVostok */ = {
+		26EA0D8A24753F2000D53BCF /* Sushinsk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26EA0D9F24753F2600D53BCF /* Build configuration list for PBXNativeTarget "SushiVostok" */;
+			buildConfigurationList = 26EA0D9F24753F2600D53BCF /* Build configuration list for PBXNativeTarget "Sushinsk" */;
 			buildPhases = (
 				26EA0D8724753F2000D53BCF /* Sources */,
 				26EA0D8824753F2000D53BCF /* Frameworks */,
@@ -109,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = SushiVostok;
+			name = Sushinsk;
 			productName = SushiVostok;
-			productReference = 26EA0D8B24753F2000D53BCF /* SushiVostok.app */;
+			productReference = 26EA0D8B24753F2000D53BCF /* Суши НСК.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 26EA0D8624753F2000D53BCF /* Build configuration list for PBXProject "SushiVostok" */;
+			buildConfigurationList = 26EA0D8624753F2000D53BCF /* Build configuration list for PBXProject "Sushinsk" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +158,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26EA0D8A24753F2000D53BCF /* SushiVostok */,
+				26EA0D8A24753F2000D53BCF /* Sushinsk */,
 			);
 		};
 /* End PBXProject section */
@@ -327,8 +343,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.SushiVostok";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Sushinsk;
+				PRODUCT_NAME = "Суши НСК";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -345,8 +361,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.SushiVostok";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Sushinsk;
+				PRODUCT_NAME = "Суши НСК";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -355,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26EA0D8624753F2000D53BCF /* Build configuration list for PBXProject "SushiVostok" */ = {
+		26EA0D8624753F2000D53BCF /* Build configuration list for PBXProject "Sushinsk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26EA0D9D24753F2600D53BCF /* Debug */,
@@ -364,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26EA0D9F24753F2600D53BCF /* Build configuration list for PBXNativeTarget "SushiVostok" */ = {
+		26EA0D9F24753F2600D53BCF /* Build configuration list for PBXNativeTarget "Sushinsk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26EA0DA024753F2600D53BCF /* Debug */,
